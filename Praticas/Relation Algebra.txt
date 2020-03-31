@@ -1,0 +1,33 @@
+1.1) πnr Aluno
+
+1.2) πcod, design σcurso = 'AC' Cadeira
+
+1.3) πNome Aluno ∩ πNome Prof
+
+1.4) πNome Aluno - πNome Prof
+
+1.5) πNome Aluno ∪ πNome Prof ou π (Aluno ⨝ Prof)
+
+1.6) πNome (Aluno ⨝ σcod='TS1' Prova)
+
+1.7) πNome (Aluno ⨝ (Prova ⨝ (σ curso = 'IS' Cadeira)))
+
+1.8) πNome (Aluno ⨝ (σ nota >= 10 Prova ⨝ (σ curso = 'IS' Cadeira)))
+
+1.9) γmax(nota)->n Prova
+
+1.10) γavg(nota)->n σcod = 'BD' Prova
+
+1.11) γcount(*)->total Aluno
+
+1.12) γ curso ; count(*)->c Cadeira
+
+1.13) γ nr ; count(cod)->n Prova
+
+1.14) γ avg(n)->tots (γ nr ; count(cod)->n Prova)
+
+1.15) γ Nome ; avg(nota)->n σnota >= 10 (Prova ⨝ Aluno)
+
+1.16) π Nome, nota, cod (Aluno ⨝ Prova ⨝ ( γ cod; max(nota)->nota Prova))
+
+1.17)
